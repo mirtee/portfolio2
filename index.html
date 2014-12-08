@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+                <title>Mirte van Kooten</title>
+                <link rel="stylesheet" type="text/css" href="style.css"> 
+
+                <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+                <script> 
+                    var winHeight = $(window).innerHeight();
+                    $(document).ready(function () {
+                        $(".panel").height(winHeight);
+                        $("body").height(winHeight*$(".panel").length);
+                    });
+
+                    window.addEventListener('resize', function (event) {
+                        $(".panel").height($(window).innerHeight());
+                    });
+                    $(window).on('scroll',function(){
+                        $(".right").css('bottom',$(window).scrollTop()*-1);
+                    });
+
+                </script>
+    </head>
+
+    <body>
+            <div class="header">
+                <h1>Mirte van Kooten</h1>
+            </div>
+
+            <div class="left"> 
+               <BR><BR><BR>
+
+                <div id="project1" class="panel">
+                    (1)<BR><BR>
+                    <img src="images/mirtevankooten-blurred.jpg" style="width: 450px">
+                   <h1>Womanifest</h1>
+                    <p>kleine omschrijving 
+                        <BR><BR>
+
+                    In collaboration with <a href="http://www.inesthecoast.com/3540209">Ines da Costa</a>.</p>
+                </div>
+
+                <BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+                <BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+                <BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+                <BR><BR><BR><BR><BR>
+
+
+                <div id="project3" class="panel">
+                    (3)<BR><BR>
+                    <img src="images/mirtevankooten-printmaking.jpg" style="width: 400px">
+                    <h1>Printmaking</h1>
+                    <p>kleine omschrijving 
+                    </p>
+                </div>
+
+                <BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+
+                <div id="project5" class="panel">
+                    (5)<BR><BR>
+                     <img src="images/mirtevankooten-thinking.jpg" style="width: 450px">
+                    <h1>Creative Thinking</h1>
+                    <p>kleine omschrijving 
+                    </p>
+                </div>
+
+
+
+               <div id="footer" style="position: fixed; bottom: 20px;"> 
+                    Super leuk info hier aub<BR>
+                    en contact info.<BR>
+                    maar misschien niet hier.
+                </div>
+            </div>
+
+
+            <div class="right"> 
+
+                <div id="project6" class="panel">
+                    (6) <BR><BR>
+                    <img src="http://placehold.it/300x300">
+                </div>
+
+                <div id="project4" class="panel">
+                    (4)<BR><BR>
+                    <img src="images/mirtevankooten-house.jpg" style="width: 500px">
+                    <h1>The House</h1>
+                    <p>kleine ondertitel</p>
+                </div>
+
+                <div id="project2" class="panel">
+                    (2) <BR><BR>
+                    <img src="images/mirtevankooten-myth.jpg" style="width: 350px">
+                    <h1>Abandoned Princess</h1>
+                    <p>kleine ondertitel</p>
+                </div>
+
+
+
+            </div>
+
+
+
+        </body>
+
